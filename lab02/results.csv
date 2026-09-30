@@ -1,0 +1,95 @@
+type,model,context,rank,prediction,value,actual,prob
+perplexity,unigram,smoothing=mle,,train,1458.1938436912292,,
+perplexity,unigram,smoothing=mle,,valid,1316.8354933350208,,
+perplexity,unigram,smoothing=mle,,test,1306.282608176551,,
+perplexity,unigram,smoothing=laplace,,train,1458.8468001796941,,
+perplexity,unigram,smoothing=laplace,,valid,1318.7211716973331,,
+perplexity,unigram,smoothing=laplace,,test,1308.1322460888432,,
+perplexity,bigram,smoothing=mle,,train,168.3960456216381,,
+perplexity,bigram,smoothing=mle,,valid,inf,,
+perplexity,bigram,smoothing=mle,,test,inf,,
+perplexity,bigram,smoothing=laplace,,train,2431.3539522879605,,
+perplexity,bigram,smoothing=laplace,,valid,2815.6904349913575,,
+perplexity,bigram,smoothing=laplace,,test,2781.5720810498046,,
+perplexity,trigram,smoothing=mle,,train,15.100580398950886,,
+perplexity,trigram,smoothing=mle,,valid,inf,,
+perplexity,trigram,smoothing=mle,,test,inf,,
+perplexity,trigram,smoothing=laplace,,train,12085.987670806446,,
+perplexity,trigram,smoothing=laplace,,valid,19073.94445129304,,
+perplexity,trigram,smoothing=laplace,,test,18847.15271798796,,
+perplexity_addk,bigram,smoothing=add-k(k=0.003),,train,231.78859208068556,,
+perplexity_addk,bigram,smoothing=add-k(k=0.003),,valid,732.2571666229819,,
+perplexity_addk,bigram,smoothing=add-k(k=0.003),,test,732.0686937375715,,
+perplexity_addk,trigram,smoothing=add-k(k=0.001),,train,76.71594991106251,,
+perplexity_addk,trigram,smoothing=add-k(k=0.001),,valid,4131.447878872289,,
+perplexity_addk,trigram,smoothing=add-k(k=0.001),,test,4033.8938510739977,,
+corpus_size,2-gram laplace k=1,train_sentences=47628,,valid,2284.858336695029,,
+corpus_size,2-gram add-k k=0.003,train_sentences=47628,,valid,796.9570492113463,,
+corpus_size,3-gram laplace k=1,train_sentences=47628,,valid,9005.650379657045,,
+corpus_size,3-gram add-k k=0.001,train_sentences=47628,,valid,4127.792985731064,,
+corpus_size,2-gram laplace k=1,train_sentences=124578,,valid,2679.000732330356,,
+corpus_size,2-gram add-k k=0.003,train_sentences=124578,,valid,805.6668643324042,,
+corpus_size,3-gram laplace k=1,train_sentences=124578,,valid,12978.305100529951,,
+corpus_size,3-gram add-k k=0.001,train_sentences=124578,,valid,4494.816761498296,,
+corpus_size,2-gram laplace k=1,train_sentences=253348,,valid,2807.6884871766365,,
+corpus_size,2-gram add-k k=0.003,train_sentences=253348,,valid,774.3955406724748,,
+corpus_size,3-gram laplace k=1,train_sentences=253348,,valid,16086.91063607906,,
+corpus_size,3-gram add-k k=0.001,train_sentences=253348,,valid,4436.835682560326,,
+corpus_size,2-gram laplace k=1,train_sentences=510705,,valid,2815.6904349913575,,
+corpus_size,2-gram add-k k=0.003,train_sentences=510705,,valid,732.2571666229819,,
+corpus_size,3-gram laplace k=1,train_sentences=510705,,valid,19073.94445129304,,
+corpus_size,3-gram add-k k=0.001,train_sentences=510705,,valid,4131.447878872289,,
+context_length,unigram,context_length=0,,validation_ppl,1318.7211716973331,,
+context_length,bigram,context_length=1,,validation_ppl,2815.6904349913575,,
+context_length,trigram,context_length=2,,validation_ppl,19073.94445129304,,
+next_word,trigram_mle,the cat,,</s>,,family,0.06493506493506493
+next_word,bigram_mle,the cat,,</s>,,family,0.10350877192982456
+next_word,trigram_mle,natural language,,processing,,analysis,0.35714285714285715
+next_word,bigram_mle,natural language,,</s>,,analysis,0.12404870624048706
+next_word,trigram_mle,machine learning,,and,,portfolio,0.125
+next_word,bigram_mle,machine learning,,</s>,,portfolio,0.0867148415786548
+next_word,trigram_mle,thank you,,for,,for,0.3683098591549296
+next_word,bigram_mle,thank you,,can,,for,0.11214175975233628
+next_word,trigram_mle,click here,,to,,to,0.45166666666666666
+next_word,bigram_mle,click here,,</s>,,to,0.24833887043189368
+next_word,trigram_mle,terms of,,the,,the,0.12987012987012986
+next_word,bigram_mle,terms of,,the,,the,0.22632146020325242
+next_word,trigram_mle,for more,,information,,than,0.41935483870967744
+next_word,bigram_mle,for more,,than,,than,0.15379409907064875
+next_word,trigram_mle,one of,,the,,the,0.5988993710691823
+next_word,bigram_mle,one of,,the,,the,0.22632146020325242
+top1_accuracy,bigram_mle,test[:3000],,,,54713,0.13872388646208397
+top1_accuracy,trigram_mle,test[:3000],,,,45340,0.16151301279223643
+ranking,bigram_mle,machine learning,,A: is useful for nlp,,,-25.64015959395668
+ranking,bigram_mle,machine learning,,B: banana computer quickly,,,-inf
+ranking,bigram_mle,machine learning,,C: studies language models,,,-inf
+ranking,bigram_mle_norm,machine learning,,A: is useful for nlp,,,-6.41003989848917
+ranking,bigram_mle_norm,machine learning,,B: banana computer quickly,,,-inf
+ranking,bigram_mle_norm,machine learning,,C: studies language models,,,-inf
+ranking,bigram_laplace,machine learning,,C: studies language models,,,-32.652389615655
+ranking,bigram_laplace,machine learning,,B: banana computer quickly,,,-33.33351619760853
+ranking,bigram_laplace,machine learning,,A: is useful for nlp,,,-33.81822855004783
+ranking,bigram_laplace_norm,machine learning,,A: is useful for nlp,,,-8.454557137511957
+ranking,bigram_laplace_norm,machine learning,,C: studies language models,,,-10.884129871885
+ranking,bigram_laplace_norm,machine learning,,B: banana computer quickly,,,-11.11117206586951
+ranking,bigram_addk,machine learning,,A: is useful for nlp,,,-25.94894181547577
+ranking,bigram_addk,machine learning,,C: studies language models,,,-33.63805317282939
+ranking,bigram_addk,machine learning,,B: banana computer quickly,,,-38.08335498238229
+ranking,bigram_addk_norm,machine learning,,A: is useful for nlp,,,-6.4872354538689425
+ranking,bigram_addk_norm,machine learning,,C: studies language models,,,-11.21268439094313
+ranking,bigram_addk_norm,machine learning,,B: banana computer quickly,,,-12.694451660794096
+ranking,trigram_addk,machine learning,,B: banana computer quickly,,,-34.07900209764587
+ranking,trigram_addk,machine learning,,C: studies language models,,,-34.094083747465774
+ranking,trigram_addk,machine learning,,A: is useful for nlp,,,-37.197196800391964
+ranking,trigram_addk_norm,machine learning,,A: is useful for nlp,,,-9.299299200097991
+ranking,trigram_addk_norm,machine learning,,B: banana computer quickly,,,-11.359667365881956
+ranking,trigram_addk_norm,machine learning,,C: studies language models,,,-11.36469458248859
+shuffle_test,bigram_addk,valid sentences,,,,1889,0.9825304393859184
+error_analysis,bigram_mle,couldn,Correct,t,1.0,t,
+error_analysis,bigram_mle,burkina,Correct,faso,1.0,faso,
+error_analysis,bigram_mle,<s>,Wrong,the,0.0899031730646851,dehydrate,
+error_analysis,bigram_mle,rosebery,Wrong,kids,1.0,mascot,
+error_analysis,trigram_mle,or equivalents,Correct,</s>,1.0,</s>,
+error_analysis,trigram_mle,<s> mcgraw,Correct,hill,1.0,hill,
+error_analysis,trigram_mle,<unk> working,Wrong,for,0.13333333333333333,<unk>,
+error_analysis,trigram_mle,dehydrate in,Wrong,the,1.0,95,
