@@ -88,7 +88,7 @@ Thêm một từ vào câu thì xác suất không thể tăng, vì phải nhân
 9.1.
 
 $$
-\operatorname{Count}(\text{study AI}) = 0
+\mathrm{Count}(\text{study AI}) = 0
 $$
 
 9.2.
