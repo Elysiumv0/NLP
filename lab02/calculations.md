@@ -153,4 +153,4 @@ $$
 PP(W) = \left(\frac{1}{40}\right)^{-1/3} \approx 3.42
 $$
 
-Vì Perplexity là phép lấy log, xác suất càng nhỏ thì Perplexity càng lớn.
+Vì Perplexity là phép lấy log của xác suất, xác suất càng nhỏ thì Perplexity càng lớn.
