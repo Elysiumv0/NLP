@@ -1,9 +1,9 @@
 1.
-$$
+
 vocab = 7
 
 token = 12
-$$
+
 $$
 P(\text{the}) = \frac{3}{12}
 $$
@@ -26,7 +26,7 @@ $$
 P(W) = \frac{3+2+2+2+1+1+1}{12} = 1
 $$
 
-2. 
+2.
 
 Có 9 bigram.
 
@@ -74,7 +74,7 @@ $$
 \sum_w P(w\mid\text{the}) = 1
 $$
 
-3. 
+3.
 
 $$
 P(W) = \frac{1}{4}\times\frac{2}{3}\times\frac{1}{2}\times\frac{1}{2}
@@ -83,15 +83,15 @@ $$
 
 Thêm một từ vào câu thì xác suất không thể tăng, vì phải nhân thêm một xác suất có điều kiện trong khoảng $[0,1]$.
 
-9
+9.
 
-9.1. 
+9.1.
 
 $$
 \operatorname{Count}(\text{study AI}) = 0
 $$
 
-9.2. 
+9.2.
 
 $$
 P(\text{AI}\mid\text{Study})
@@ -99,13 +99,13 @@ P(\text{AI}\mid\text{Study})
 = 0
 $$
 
-9.3. 
+9.3.
 
 $$
 P = 0
 $$
 
-11. 
+11.
 
 $$
 P = \frac{0+1}{10+5} = \frac{1}{15}
@@ -125,7 +125,7 @@ $$
 
 để tăng xác suất cho các bigram chưa thấy.
 
-18. 
+18.
 
 Trường hợp 1
 
@@ -136,7 +136,6 @@ $$
 $$
 PP(W) = \left(\frac{1}{16}\right)^{-1/3} \approx 2.52
 $$
-
 
 Nếu:
 
