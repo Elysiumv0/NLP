@@ -1,9 +1,9 @@
 1.
-
+$$
 vocab = 7
 
 token = 12
-
+$$
 $$
 P(\text{the}) = \frac{3}{12}
 $$
