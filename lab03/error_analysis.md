@@ -49,11 +49,3 @@
   (2) Similarity ≠ relatedness: `hospital` là địa điểm, `doctor` là người → đứng ở vai trò cú pháp khác nhau nên context không thay thế được cho nhau
   dù thường xuất hiện cùng câu
 ---
-
-## C. Các ví dụ được nêu trong đề
-
-| Cặp | Cosine | Rank / 211 | #câu chứa cả hai | Nhận xét |
-|---|:--:|:--:|:--:|---|
-| doctor → nurse | 0,989 | 1 | 0 | xem B1 |
-| doctor → hospital | 0,389 | 22 | 460 | xem B3: cùng chủ đề nhưng khác vai trò → cosine vừa phải |
-| doctor → disease | 0,410 | 17 | 120 | cùng chủ đề; cosine thấp hơn `cancer`/`infection` (0,45/0,44) (giả thuyết, chưa kiểm chứng) vì `disease` là từ chung chung và `cancer`/`infection` dùng cùng khung với nhau |
