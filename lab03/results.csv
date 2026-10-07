@@ -1,0 +1,289 @@
+experiment,setting,item,metric,value
+exp1_word_context,window=1,matrix,vocab_size,197.0
+exp1_word_context,window=1,matrix,n_entries,38809.0
+exp1_word_context,window=1,matrix,nonzero,486.0
+exp1_word_context,window=1,matrix,density,0.0125
+exp1_word_context,window=1,doctor-physician,cosine_count,0.6454
+exp1_word_context,window=1,doctor-hospital,cosine_count,0.0
+exp1_word_context,window=1,doctor-banana,cosine_count,0.0
+exp1_word_context,window=2,matrix,vocab_size,197.0
+exp1_word_context,window=2,matrix,n_entries,38809.0
+exp1_word_context,window=2,matrix,nonzero,1038.0
+exp1_word_context,window=2,matrix,density,0.0267
+exp1_word_context,window=2,doctor-physician,cosine_count,0.6653
+exp1_word_context,window=2,doctor-hospital,cosine_count,0.0
+exp1_word_context,window=2,doctor-banana,cosine_count,0.0
+exp1_word_context,window=5,matrix,vocab_size,197.0
+exp1_word_context,window=5,matrix,n_entries,38809.0
+exp1_word_context,window=5,matrix,nonzero,2196.0
+exp1_word_context,window=5,matrix,density,0.0566
+exp1_word_context,window=5,doctor-physician,cosine_count,0.7131
+exp1_word_context,window=5,doctor-hospital,cosine_count,0.6126
+exp1_word_context,window=5,doctor-banana,cosine_count,0.0
+exp1_doctor_top5,count_with_stopwords,doctor->nurse,cosine_rank1,0.9984
+exp1_doctor_top5,count_with_stopwords,doctor->surgeon,cosine_rank2,0.9753
+exp1_doctor_top5,count_with_stopwords,doctor->physician,cosine_rank3,0.962
+exp1_doctor_top5,count_with_stopwords,doctor->patient,cosine_rank4,0.9158
+exp1_doctor_top5,count_with_stopwords,doctor->the,cosine_rank5,0.9097
+exp1_doctor_top5,count_no_stopwords,doctor->nurse,cosine_rank1,0.991
+exp1_doctor_top5,count_no_stopwords,doctor->surgeon,cosine_rank2,0.8555
+exp1_doctor_top5,count_no_stopwords,doctor->physician,cosine_rank3,0.7689
+exp1_doctor_top5,count_no_stopwords,doctor->hospital,cosine_rank4,0.6507
+exp1_doctor_top5,count_no_stopwords,doctor->admitted,cosine_rank5,0.5904
+exp1_doctor_top5,ppmi,doctor->nurse,cosine_rank1,0.9955
+exp1_doctor_top5,ppmi,doctor->surgeon,cosine_rank2,0.7099
+exp1_doctor_top5,ppmi,doctor->physician,cosine_rank3,0.6219
+exp1_doctor_top5,ppmi,doctor->patient,cosine_rank4,0.5001
+exp1_doctor_top5,ppmi,doctor->hospital,cosine_rank5,0.4708
+exp1_doctor_top5,ppmi_svd20,doctor->nurse,cosine_rank1,0.9999
+exp1_doctor_top5,ppmi_svd20,doctor->surgeon,cosine_rank2,0.894
+exp1_doctor_top5,ppmi_svd20,doctor->hospital,cosine_rank3,0.8065
+exp1_doctor_top5,ppmi_svd20,doctor->patient,cosine_rank4,0.8055
+exp1_doctor_top5,ppmi_svd20,doctor->physician,cosine_rank5,0.6164
+exp1_full_corpus_count,window=1,doctor-hospital,cosine_count,0.0
+exp1_full_corpus_count,window=1,doctor-physician,cosine_count,0.6827
+exp1_full_corpus_count,window=2,doctor-hospital,cosine_count,0.0
+exp1_full_corpus_count,window=2,doctor-physician,cosine_count,0.7413
+exp1_full_corpus_count,window=3,doctor-hospital,cosine_count,0.4946
+exp1_full_corpus_count,window=3,doctor-physician,cosine_count,0.7816
+exp1_full_corpus_count,window=5,doctor-hospital,cosine_count,0.6507
+exp1_full_corpus_count,window=5,doctor-physician,cosine_count,0.7689
+exp2_word2vec_baseline,sg d=100 w=5,doctor-physician,cosine,0.7373
+exp2_word2vec_baseline,sg d=100 w=5,doctor-hospital,cosine,0.3889
+exp2_word2vec_baseline,sg d=100 w=5,cat-dog,cosine,0.8098
+exp2_word2vec_baseline,sg d=100 w=5,doctor-banana,cosine,0.2365
+exp2_word2vec_baseline,sg d=100 w=5,car-banana,cosine,0.4613
+exp2_word2vec_baseline,sg d=100 w=5,model,vocab_size,212.0
+exp2_word2vec_baseline,sg d=100 w=5,model,train_seconds,1.7755
+exp2_cbow_vs_skipgram,cbow,doctor-physician,cosine,0.8336
+exp2_cbow_vs_skipgram,skipgram,doctor-physician,cosine,0.7373
+pred1_five_words,sg d=100 w=5,doctor-physician,cosine,0.7373
+pred1_five_words,sg d=100 w=5,banana-car,cosine,0.4613
+pred1_five_words,sg d=100 w=5,doctor-hospital,cosine,0.3889
+pred1_five_words,sg d=100 w=5,physician-hospital,cosine,0.3207
+pred1_five_words,sg d=100 w=5,doctor-car,cosine,0.253
+pred1_five_words,sg d=100 w=5,doctor-banana,cosine,0.2365
+pred1_five_words,sg d=100 w=5,hospital-banana,cosine,0.2196
+pred1_five_words,sg d=100 w=5,physician-car,cosine,0.1923
+pred1_five_words,sg d=100 w=5,hospital-car,cosine,0.1772
+pred1_five_words,sg d=100 w=5,physician-banana,cosine,0.1097
+pred1_five_words,sg d=100 w=5,all word pairs,mean_cosine_baseline,0.2872
+exp2_top5,sg d=100 w=5,doctor->nurse,cosine_rank1,0.9892
+exp2_top5,sg d=100 w=5,doctor->surgeon,cosine_rank2,0.7914
+exp2_top5,sg d=100 w=5,doctor->physician,cosine_rank3,0.7373
+exp2_top5,sg d=100 w=5,doctor->rest,cosine_rank4,0.5723
+exp2_top5,sg d=100 w=5,doctor->should,cosine_rank5,0.5545
+exp2_top5,sg d=100 w=5,hospital->with,cosine_rank1,0.5145
+exp2_top5,sg d=100 w=5,hospital->long,cosine_rank2,0.4925
+exp2_top5,sg d=100 w=5,hospital->admitted,cosine_rank3,0.4898
+exp2_top5,sg d=100 w=5,hospital->hired,cosine_rank4,0.4789
+exp2_top5,sg d=100 w=5,hospital->shifts,cosine_rank5,0.4714
+exp2_top5,sg d=100 w=5,patient->explained,cosine_rank1,0.532
+exp2_top5,sg d=100 w=5,patient->about,cosine_rank2,0.5106
+exp2_top5,sg d=100 w=5,patient->home,cosine_rank3,0.4991
+exp2_top5,sg d=100 w=5,patient->symptoms,cosine_rank4,0.4977
+exp2_top5,sg d=100 w=5,patient->surgeon,cosine_rank5,0.4977
+exp2_top5,sg d=100 w=5,disease->infection,cosine_rank1,0.9894
+exp2_top5,sg d=100 w=5,disease->cancer,cosine_rank2,0.9879
+exp2_top5,sg d=100 w=5,disease->diabetes,cosine_rank3,0.9859
+exp2_top5,sg d=100 w=5,disease->flu,cosine_rank4,0.9845
+exp2_top5,sg d=100 w=5,disease->insulin,cosine_rank5,0.5203
+exp2_top5,sg d=100 w=5,computer->laptop,cosine_rank1,0.9344
+exp2_top5,sg d=100 w=5,computer->keyboard,cosine_rank2,0.9327
+exp2_top5,sg d=100 w=5,computer->software,cosine_rank3,0.9279
+exp2_top5,sg d=100 w=5,computer->server,cosine_rank4,0.9134
+exp2_top5,sg d=100 w=5,computer->office,cosine_rank5,0.5018
+exp2_top5,sg d=100 w=5,football->stadium,cosine_rank1,0.5836
+exp2_top5,sg d=100 w=5,football->goal,cosine_rank2,0.5506
+exp2_top5,sg d=100 w=5,football->won,cosine_rank3,0.5376
+exp2_top5,sg d=100 w=5,football->player,cosine_rank4,0.5344
+exp2_top5,sg d=100 w=5,football->match,cosine_rank5,0.5176
+exp2_top5,sg d=100 w=5,banana->orange,cosine_rank1,0.9409
+exp2_top5,sg d=100 w=5,banana->mango,cosine_rank2,0.9391
+exp2_top5,sg d=100 w=5,banana->apple,cosine_rank3,0.9367
+exp2_top5,sg d=100 w=5,banana->farmer,cosine_rank4,0.5391
+exp2_top5,sg d=100 w=5,banana->breakfast,cosine_rank5,0.5279
+exp3_window,window=2,doctor-physician,cosine_mean_3seeds,0.7486
+exp3_window,window=2,doctor-physician,cosine_std_3seeds,0.007
+exp3_window,window=2,doctor-hospital,cosine_mean_3seeds,0.3745
+exp3_window,window=2,doctor-hospital,cosine_std_3seeds,0.0086
+exp3_window,window=2,cat-dog,cosine_mean_3seeds,0.8448
+exp3_window,window=2,cat-dog,cosine_std_3seeds,0.0104
+exp3_window,window=2,doctor-banana,cosine_mean_3seeds,0.2563
+exp3_window,window=2,doctor-banana,cosine_std_3seeds,0.027
+exp3_window,window=5,doctor-physician,cosine_mean_3seeds,0.7386
+exp3_window,window=5,doctor-physician,cosine_std_3seeds,0.0035
+exp3_window,window=5,doctor-hospital,cosine_mean_3seeds,0.3839
+exp3_window,window=5,doctor-hospital,cosine_std_3seeds,0.0035
+exp3_window,window=5,cat-dog,cosine_mean_3seeds,0.7968
+exp3_window,window=5,cat-dog,cosine_std_3seeds,0.0093
+exp3_window,window=5,doctor-banana,cosine_mean_3seeds,0.2207
+exp3_window,window=5,doctor-banana,cosine_std_3seeds,0.0152
+exp3_window,window=10,doctor-physician,cosine_mean_3seeds,0.7325
+exp3_window,window=10,doctor-physician,cosine_std_3seeds,0.0071
+exp3_window,window=10,doctor-hospital,cosine_mean_3seeds,0.3605
+exp3_window,window=10,doctor-hospital,cosine_std_3seeds,0.0043
+exp3_window,window=10,cat-dog,cosine_mean_3seeds,0.78
+exp3_window,window=10,cat-dog,cosine_std_3seeds,0.0057
+exp3_window,window=10,doctor-banana,cosine_mean_3seeds,0.2178
+exp3_window,window=10,doctor-banana,cosine_std_3seeds,0.0074
+exp4_dimension,dim=50,model,train_seconds,1.8718
+exp4_dimension,dim=50,model,model_KB,96.04
+exp4_dimension,dim=50,model,spearman_gold,0.8013
+exp4_dimension,dim=50,model,analogy_top1,0.75
+exp4_dimension,dim=50,model,analogy_top5,1.0
+exp4_dimension,dim=50,model,downstream_acc,1.0
+exp4_dimension,dim=50,model,cos_doctor_physician,0.7427
+exp4_dimension,dim=50,model,cos_doctor_banana,0.2581
+exp4_dimension,dim=100,model,train_seconds,1.9785
+exp4_dimension,dim=100,model,model_KB,178.8633
+exp4_dimension,dim=100,model,spearman_gold,0.7961
+exp4_dimension,dim=100,model,analogy_top1,0.8333
+exp4_dimension,dim=100,model,analogy_top5,1.0
+exp4_dimension,dim=100,model,downstream_acc,1.0
+exp4_dimension,dim=100,model,cos_doctor_physician,0.7373
+exp4_dimension,dim=100,model,cos_doctor_banana,0.2365
+exp4_dimension,dim=300,model,train_seconds,3.1258
+exp4_dimension,dim=300,model,model_KB,510.1182
+exp4_dimension,dim=300,model,spearman_gold,0.8034
+exp4_dimension,dim=300,model,analogy_top1,0.8333
+exp4_dimension,dim=300,model,analogy_top5,1.0
+exp4_dimension,dim=300,model,downstream_acc,1.0
+exp4_dimension,dim=300,model,cos_doctor_physician,0.7364
+exp4_dimension,dim=300,model,cos_doctor_banana,0.26
+eval_similarity,count (window=5),18 pairs,spearman_gold,0.8158
+eval_similarity_pairs,count (window=5),doctor-physician,cosine,0.7689
+eval_similarity_pairs,count (window=5),car-automobile,cosine,0.9964
+eval_similarity_pairs,count (window=5),laptop-computer,cosine,0.9989
+eval_similarity_pairs,count (window=5),king-queen,cosine,0.8134
+eval_similarity_pairs,count (window=5),cat-dog,cosine,0.8359
+eval_similarity_pairs,count (window=5),car-truck,cosine,0.9973
+eval_similarity_pairs,count (window=5),banana-apple,cosine,0.999
+eval_similarity_pairs,count (window=5),man-woman,cosine,0.8403
+eval_similarity_pairs,count (window=5),doctor-nurse,cosine,0.991
+eval_similarity_pairs,count (window=5),football-goal,cosine,0.3975
+eval_similarity_pairs,count (window=5),paris-france,cosine,0.3469
+eval_similarity_pairs,count (window=5),doctor-hospital,cosine,0.6507
+eval_similarity_pairs,count (window=5),patient-disease,cosine,0.6138
+eval_similarity_pairs,count (window=5),cat-fish,cosine,0.386
+eval_similarity_pairs,count (window=5),doctor-computer,cosine,0.0474
+eval_similarity_pairs,count (window=5),computer-banana,cosine,0.0091
+eval_similarity_pairs,count (window=5),king-banana,cosine,0.0078
+eval_similarity_pairs,count (window=5),hospital-football,cosine,0.001
+eval_similarity,PPMI (window=5),18 pairs,spearman_gold,0.8384
+eval_similarity_pairs,PPMI (window=5),doctor-physician,cosine,0.6219
+eval_similarity_pairs,PPMI (window=5),car-automobile,cosine,0.9992
+eval_similarity_pairs,PPMI (window=5),laptop-computer,cosine,0.9999
+eval_similarity_pairs,PPMI (window=5),king-queen,cosine,0.8016
+eval_similarity_pairs,PPMI (window=5),cat-dog,cosine,0.7813
+eval_similarity_pairs,PPMI (window=5),car-truck,cosine,0.9995
+eval_similarity_pairs,PPMI (window=5),banana-apple,cosine,0.9999
+eval_similarity_pairs,PPMI (window=5),man-woman,cosine,0.859
+eval_similarity_pairs,PPMI (window=5),doctor-nurse,cosine,0.9955
+eval_similarity_pairs,PPMI (window=5),football-goal,cosine,0.5496
+eval_similarity_pairs,PPMI (window=5),paris-france,cosine,0.3517
+eval_similarity_pairs,PPMI (window=5),doctor-hospital,cosine,0.4708
+eval_similarity_pairs,PPMI (window=5),patient-disease,cosine,0.4115
+eval_similarity_pairs,PPMI (window=5),cat-fish,cosine,0.3001
+eval_similarity_pairs,PPMI (window=5),doctor-computer,cosine,0.006
+eval_similarity_pairs,PPMI (window=5),computer-banana,cosine,0.0
+eval_similarity_pairs,PPMI (window=5),king-banana,cosine,0.0
+eval_similarity_pairs,PPMI (window=5),hospital-football,cosine,0.0
+eval_similarity,PPMI+SVD dense 20d,18 pairs,spearman_gold,0.6858
+eval_similarity_pairs,PPMI+SVD dense 20d,doctor-physician,cosine,0.6164
+eval_similarity_pairs,PPMI+SVD dense 20d,car-automobile,cosine,1.0
+eval_similarity_pairs,PPMI+SVD dense 20d,laptop-computer,cosine,1.0
+eval_similarity_pairs,PPMI+SVD dense 20d,king-queen,cosine,0.9953
+eval_similarity_pairs,PPMI+SVD dense 20d,cat-dog,cosine,0.9998
+eval_similarity_pairs,PPMI+SVD dense 20d,car-truck,cosine,1.0
+eval_similarity_pairs,PPMI+SVD dense 20d,banana-apple,cosine,1.0
+eval_similarity_pairs,PPMI+SVD dense 20d,man-woman,cosine,0.9939
+eval_similarity_pairs,PPMI+SVD dense 20d,doctor-nurse,cosine,0.9999
+eval_similarity_pairs,PPMI+SVD dense 20d,football-goal,cosine,1.0
+eval_similarity_pairs,PPMI+SVD dense 20d,paris-france,cosine,0.2707
+eval_similarity_pairs,PPMI+SVD dense 20d,doctor-hospital,cosine,0.8065
+eval_similarity_pairs,PPMI+SVD dense 20d,patient-disease,cosine,0.4463
+eval_similarity_pairs,PPMI+SVD dense 20d,cat-fish,cosine,0.8393
+eval_similarity_pairs,PPMI+SVD dense 20d,doctor-computer,cosine,0.0032
+eval_similarity_pairs,PPMI+SVD dense 20d,computer-banana,cosine,0.0002
+eval_similarity_pairs,PPMI+SVD dense 20d,king-banana,cosine,-0.0028
+eval_similarity_pairs,PPMI+SVD dense 20d,hospital-football,cosine,0.0
+eval_similarity,Word2Vec sg d=100,18 pairs,spearman_gold,0.7961
+eval_similarity_pairs,Word2Vec sg d=100,doctor-physician,cosine,0.7373
+eval_similarity_pairs,Word2Vec sg d=100,car-automobile,cosine,0.982
+eval_similarity_pairs,Word2Vec sg d=100,laptop-computer,cosine,0.9344
+eval_similarity_pairs,Word2Vec sg d=100,king-queen,cosine,0.7757
+eval_similarity_pairs,Word2Vec sg d=100,cat-dog,cosine,0.8098
+eval_similarity_pairs,Word2Vec sg d=100,car-truck,cosine,0.9679
+eval_similarity_pairs,Word2Vec sg d=100,banana-apple,cosine,0.9367
+eval_similarity_pairs,Word2Vec sg d=100,man-woman,cosine,0.7798
+eval_similarity_pairs,Word2Vec sg d=100,doctor-nurse,cosine,0.9892
+eval_similarity_pairs,Word2Vec sg d=100,football-goal,cosine,0.5506
+eval_similarity_pairs,Word2Vec sg d=100,paris-france,cosine,0.5408
+eval_similarity_pairs,Word2Vec sg d=100,doctor-hospital,cosine,0.3889
+eval_similarity_pairs,Word2Vec sg d=100,patient-disease,cosine,0.4187
+eval_similarity_pairs,Word2Vec sg d=100,cat-fish,cosine,0.3134
+eval_similarity_pairs,Word2Vec sg d=100,doctor-computer,cosine,0.2178
+eval_similarity_pairs,Word2Vec sg d=100,computer-banana,cosine,0.3316
+eval_similarity_pairs,Word2Vec sg d=100,king-banana,cosine,0.237
+eval_similarity_pairs,Word2Vec sg d=100,hospital-football,cosine,0.2281
+eval_analogy_offsets,sg d=100 w=5,(king-man) vs (queen-woman),cosine,0.8579
+eval_analogy_offsets,sg d=100 w=5,(paris-france) vs (rome-italy),cosine,0.5222
+eval_analogy_offsets,sg d=100 w=5,(king-man) vs (rome-italy),cosine,0.083
+eval_analogy,sg d=100 w=5,king - man + woman,hit_at_1,0.0
+eval_analogy,sg d=100 w=5,prince - man + woman,hit_at_1,1.0
+eval_analogy,sg d=100 w=5,queen - woman + man,hit_at_1,1.0
+eval_analogy,sg d=100 w=5,princess - woman + man,hit_at_1,0.0
+eval_analogy,sg d=100 w=5,boy - man + woman,hit_at_1,1.0
+eval_analogy,sg d=100 w=5,paris - france + italy,hit_at_1,1.0
+eval_analogy,sg d=100 w=5,rome - italy + france,hit_at_1,1.0
+eval_analogy,sg d=100 w=5,berlin - germany + spain,hit_at_1,1.0
+eval_analogy,sg d=100 w=5,madrid - spain + germany,hit_at_1,1.0
+eval_analogy,sg d=100 w=5,tokyo - japan + vietnam,hit_at_1,1.0
+eval_analogy,sg d=100 w=5,hanoi - vietnam + japan,hit_at_1,1.0
+eval_analogy,sg d=100 w=5,berlin - germany + italy,hit_at_1,1.0
+eval_analogy,sg d=100 w=5,12 analogies,top1_acc,0.8333
+eval_analogy,sg d=100 w=5,12 analogies,top5_acc,1.0
+app_semantic_search,medical treatment,TF-IDF,r_precision,0.0
+app_semantic_search,medical treatment,embedding_mean,r_precision,1.0
+app_semantic_search,automobile engine,TF-IDF,r_precision,1.0
+app_semantic_search,automobile engine,embedding_mean,r_precision,1.0
+app_semantic_search,paris capital,TF-IDF,r_precision,1.0
+app_semantic_search,paris capital,embedding_mean,r_precision,1.0
+app_clustering,kmeans k=8,74 words,adjusted_rand_index,0.8596
+pred4_small_corpus,"100 sentences, epochs=10",doctor-physician,cosine_mean_30trials,0.2495
+pred4_small_corpus,"100 sentences, epochs=10",doctor-physician,cosine_std_30trials,0.1082
+pred4_small_corpus,"100 sentences, epochs=10",doctor-all_other_words,cosine_mean_30trials,0.2068
+pred4_small_corpus,"100 sentences, epochs=10",physician,normalized_rank_mean,0.3922
+pred4_small_corpus,"100 sentences, epochs=10",doctor-physician,both_in_vocab_rate,0.9333
+pred4_small_corpus,"100 sentences, epochs=100",doctor-physician,cosine_mean_30trials,0.9814
+pred4_small_corpus,"100 sentences, epochs=100",doctor-physician,cosine_std_30trials,0.0137
+pred4_small_corpus,"100 sentences, epochs=100",doctor-all_other_words,cosine_mean_30trials,0.9553
+pred4_small_corpus,"100 sentences, epochs=100",physician,normalized_rank_mean,0.1692
+pred4_small_corpus,"100 sentences, epochs=100",doctor-physician,both_in_vocab_rate,0.9333
+error_analysis,sg d=100 w=5,doctor->physician,cosine,0.7373
+error_analysis,sg d=100 w=5,doctor->physician,rank_among_211,3.0
+error_analysis,sg d=100 w=5,doctor->nurse,cosine,0.9892
+error_analysis,sg d=100 w=5,doctor->nurse,rank_among_211,1.0
+error_analysis,sg d=100 w=5,doctor->surgeon,cosine,0.7914
+error_analysis,sg d=100 w=5,doctor->surgeon,rank_among_211,2.0
+error_analysis,sg d=100 w=5,doctor->hospital,cosine,0.3889
+error_analysis,sg d=100 w=5,doctor->hospital,rank_among_211,22.0
+error_analysis,sg d=100 w=5,doctor->patient,cosine,0.4387
+error_analysis,sg d=100 w=5,doctor->patient,rank_among_211,11.0
+error_analysis,sg d=100 w=5,doctor->disease,cosine,0.4104
+error_analysis,sg d=100 w=5,doctor->disease,rank_among_211,17.0
+error_analysis,sg d=100 w=5,doctor->clinic,cosine,0.3262
+error_analysis,sg d=100 w=5,doctor->clinic,rank_among_211,37.0
+error_analysis,sg d=100 w=5,doctor->computer,cosine,0.2178
+error_analysis,sg d=100 w=5,doctor->computer,rank_among_211,90.0
+error_analysis,sg d=100 w=5,doctor->banana,cosine,0.2365
+error_analysis,sg d=100 w=5,doctor->banana,rank_among_211,77.0
+error_analysis,sg d=100 w=5,doctor->car,cosine,0.253
+error_analysis,sg d=100 w=5,doctor->car,rank_among_211,64.0
+polysemy_bank,static,bank,cos_money_prototype,0.627
+polysemy_bank,static,bank,cos_river_prototype,0.5749
+polysemy_bank,i deposited money in the bank,context_mean,cos_money_minus_river,0.3309
+polysemy_bank,we sat on the river bank,context_mean,cos_money_minus_river,-0.2775
+polysemy_bank,the bank approved the loan,context_mean,cos_money_minus_river,0.2487
+polysemy_bank,fish swam near the river bank,context_mean,cos_money_minus_river,-0.2439
