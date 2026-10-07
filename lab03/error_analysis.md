@@ -1,4 +1,4 @@
-## A. Ba similarity ĐÚNG
+## A. Ba similarity đúng
 
 ### A1. `doctor → surgeon` (rank 2, cosine 0,791)
 - Observed: `surgeon` là láng giềng gần thứ 2 của `doctor`.
