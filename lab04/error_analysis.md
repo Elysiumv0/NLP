@@ -1,10 +1,5 @@
 # Error Analysis
 
-Baseline: TF-IDF + Logistic Regression. Examples are drawn from the held-out test split.
-
-Three correct predictions and three incorrect predictions are sampled where enough examples are available.
-The category is an automatic candidate, not a confirmed diagnosis. Feature contributions show which TF-IDF terms affect the linear score; manually inspect the complete review before assigning a final explanation.
-
 | Text excerpt | True label | Predicted label | Candidate category | Analysis |
 |---|---|---|---|---|
 | My poor Tank Girl, they ignored everything great about you. Why does it have as little to do with the comics as possible? I would have loved a movie that followed the plot, or at least had the characters right.<br /><br />WHY WAS TANK GIRL American? She's Austrailian, dammit! And she's not living in a post apocalyptic … | negative | negative | negation | Correct prediction. Features contributing toward negative: poor (-0.324), lame (-0.275), terrible (-0.180). Check the full review to confirm these terms express sentiment rather than incidental topic or plot information. Contributions describe the linear model score and do not prove causation. |
