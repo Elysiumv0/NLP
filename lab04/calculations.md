@@ -28,12 +28,11 @@ Vậy $P(y=1\mid x)\approx 0.5498$, tương đương khoảng **54.98%**.
 
 ## Bài 2 — Prediction threshold
 
-Quy tắc dự đoán là positive khi xác suất lớn hơn hoặc bằng threshold.
 
 - Với $P(y=1\mid x)=0.72$ và $\tau=0.5$, dự đoán **class 1**.
 - Với $P(y=1\mid x)=0.72$ và $\tau=0.8$, dự đoán **class 0**.
 
-Khi tăng threshold, mô hình khó dự đoán positive hơn. Thông thường precision tăng và recall giảm. Đây là xu hướng thường gặp, không phải bảo đảm toán học cho mọi tập dữ liệu.
+Khi tăng threshold, mô hình khó dự đoán positive hơn. Thông thường precision tăng và recall giảm.
 
 ## Bài 3 — Confusion matrix
 
@@ -75,5 +74,3 @@ Accuracy cao không có nghĩa mô hình phát hiện positive tốt. Với clas
 - TP = 0, FP = 0, FN = 50, TN = 950.
 - Recall = 0%.
 - F1 = 0 khi quy ước precision không xác định được là 0.
-
-Cần xem confusion matrix, precision, recall, F1 cho từng class, macro F1 và balanced accuracy. Với bài toán lệch lớp, nên xem thêm precision-recall curve và PR-AUC khi cần chọn threshold.
