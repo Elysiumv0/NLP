@@ -1,0 +1,5 @@
+Model,Representation,Classifier,Training_time_seconds,Vocabulary_size,Feature_Dimension,Accuracy,Precision,Recall,F1,TN,FP,FN,TP
+TF-IDF + Logistic Regression,TF-IDF unigram,Logistic Regression,2.091286,27352,27352,0.871630,0.867460,0.877912,0.872655,1073,167,152,1093
+Average Word2Vec + Logistic Regression,Average Word2Vec,Logistic Regression,108.513416,28495,100,0.845070,0.862563,0.821687,0.841629,1077,163,222,1023
+TF-IDF + Linear SVM,TF-IDF unigram,Linear SVM,1.569994,27352,27352,0.866398,0.865492,0.868273,0.866881,1072,168,164,1081
+TF-IDF unigram + bigram + Logistic Regression,TF-IDF unigram + bigram,Logistic Regression,6.376537,80000,80000,0.876459,0.869291,0.886747,0.877932,1074,166,141,1104
