@@ -1,4 +1,3 @@
-# Predictions Before Experiment
 
 | ID | Prediction | Reason | Confidence |
 |---|---|---|---|
