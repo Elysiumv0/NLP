@@ -1,0 +1,21 @@
+id,text,actual_label,predicted_label,probability_negative,probability_positive,correct,error_category
+1,I like this movie.,positive,positive,0.072453,0.927547,True,
+2,I do not like this movie.,negative,negative,0.612736,0.387264,True,
+3,"I thought this movie would be bad, but it was actually excellent.",positive,positive,0.466679,0.533321,True,
+4,"The pacing is slow, but the ending is fantastic.",positive,positive,0.464968,0.535032,True,
+5,The film is not bad.,positive,positive,0.358423,0.641577,True,
+6,The acting is not good.,negative,negative,0.649349,0.350651,True,
+7,The movie is predictable but still enjoyable.,positive,positive,0.452996,0.547004,True,
+8,"I love the visuals, yet the story is boring.",negative,negative,0.513589,0.486411,True,
+9,"Great, another two hours wasted.",negative,positive,0.134932,0.865068,False,sarcasm
+10,The plot was fine and the acting was poor.,negative,negative,0.727592,0.272408,True,
+11,I can't say it was good.,negative,positive,0.168874,0.831126,False,negation
+12,This is sick!,positive,negative,0.501794,0.498206,False,domain shift
+13,It is dull at first but improves a lot.,positive,negative,0.718255,0.281745,False,long-range dependency
+14,Nothing about this movie works.,negative,positive,0.487264,0.512736,False,negation
+15,Not only good but excellent.,positive,positive,0.183706,0.816294,True,
+16,The movie was so bad it became funny.,negative,negative,0.806771,0.193229,True,
+17,"Despite a very slow beginning, the final scene was absolutely fantastic.",positive,negative,0.503481,0.496519,False,long-range dependency
+18,"The film is not terrible, but it is not enjoyable either.",negative,negative,0.530900,0.469100,True,
+19,"The direction is excellent, although the dialogue is awkward.",negative,positive,0.277533,0.722467,False,ambiguous wording
+20,I expected a masterpiece and got a mess.,negative,positive,0.483405,0.516595,False,ambiguous wording
